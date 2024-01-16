@@ -1,0 +1,14 @@
+services:
+  postgres: 
+    image: postgres
+    env_file:
+      - .env
+    ports:
+      - '5432:5432'
+  pgAdmin:
+    image: dpage/pgadmin4
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: test@pg.com
+      PGADMIN_DEFAULT_PASSWORD: root
