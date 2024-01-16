@@ -4,6 +4,14 @@ $ docker-compose up
 ```
 Database will be exposed via PORT 5432 & pgAdmin will be available under PORT 8888. Please refer to docker-compose.yml file for more information
 
+pgAdmin login credentials
+
+```
+PGADMIN_DEFAULT_EMAIL: test@pg.com
+PGADMIN_DEFAULT_PASSWORD: root
+```
+      
+
 ## Installation
 
 ```bash
