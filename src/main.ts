@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core';
+import * as morgan from 'morgan';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
@@ -7,6 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.useGlobalPipes(new ValidationPipe());
+  app.use(morgan('tiny'))
 
   const swaggerConfig = new DocumentBuilder()
     .setTitle('NestJS TypeORM Demo')
