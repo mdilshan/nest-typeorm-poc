@@ -10,7 +10,7 @@ pgAdmin login credentials
 PGADMIN_DEFAULT_EMAIL: test@pg.com
 PGADMIN_DEFAULT_PASSWORD: root
 ```
-      
+NOTE: if you are using docker and when regisering the db server in pg-admin please use the value `host.docker.internal` as the host name. More details: https://stackoverflow.com/a/62133772/11306028
 
 ## Installation
 
