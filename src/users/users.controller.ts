@@ -16,7 +16,7 @@ import { LoginUserDto } from './dto/login-user.dto';
 import { AuthGuard } from 'src/common/auth.guard';
 import { AddShoppingPreferenceDto } from './dto/add-shopping-preference.dto';
 import { MeResponse } from './dto/me-response.dto';
-import { ExceptionResponseDto } from 'src/common/dto/forbidden-response.dto';
+import { ExceptionResponseDto } from 'src/common/dto/exception-response.dto';
 
 type RequestWithUser = Request & { user?: any };
 
